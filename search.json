@@ -1,0 +1,42 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Rust for Clinical Study Reports and Submission",
+    "section": "",
+    "text": "Welcome\nWelcome to Rust for Clinical Study Reports and Submission.",
+    "crumbs": [
+      "Welcome"
+    ]
+  },
+  {
+    "objectID": "preface.html",
+    "href": "preface.html",
+    "title": "Preface",
+    "section": "",
+    "text": "In this book\nTo be added. Knuth (1984)",
+    "crumbs": [
+      "Preface"
+    ]
+  },
+  {
+    "objectID": "preface.html#in-this-book",
+    "href": "preface.html#in-this-book",
+    "title": "Preface",
+    "section": "",
+    "text": "// A trait which implements the print marker: `{:?}`.\nuse std::fmt::Debug;\n\ntrait HasArea {\n    fn area(&self) -&gt; f64;\n}\n\nimpl HasArea for Rectangle {\n    fn area(&self) -&gt; f64 { self.length * self.height }\n}\n\n#[derive(Debug)]\nstruct Rectangle { length: f64, height: f64 }\n#[allow(dead_code)]\nstruct Triangle  { length: f64, height: f64 }\n\n// The generic `T` must implement `Debug`. Regardless\n// of the type, this will work properly.\nfn print_debug&lt;T: Debug&gt;(t: &T) {\n    println!(\"{:?}\", t);\n}\n\n// `T` must implement `HasArea`. Any type which meets\n// the bound can access `HasArea`'s function `area`.\nfn area&lt;T: HasArea&gt;(t: &T) -&gt; f64 { t.area() }\n\nfn main() {\n    let rectangle = Rectangle { length: 3.0, height: 4.0 };\n    let _triangle = Triangle  { length: 3.0, height: 4.0 };\n\n    print_debug(&rectangle);\n    println!(\"Area: {}\", area(&rectangle));\n\n    //print_debug(&_triangle);\n    //println!(\"Area: {}\", area(&_triangle));\n    // ^ TODO: Try uncommenting these.\n    // | Error: Does not implement either `Debug` or `HasArea`.\n}\n\n\n\n\nKnuth, Donald E. 1984. “Literate Programming.” Comput. J. 27 (2): 97–111.",
+    "crumbs": [
+      "Preface"
+    ]
+  },
+  {
+    "objectID": "references.html",
+    "href": "references.html",
+    "title": "References",
+    "section": "",
+    "text": "Knuth, Donald E. 1984. “Literate Programming.” Comput.\nJ. 27 (2): 97–111.",
+    "crumbs": [
+      "References"
+    ]
+  }
+]
