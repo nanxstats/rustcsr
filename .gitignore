@@ -1,1 +1,8 @@
+# Rust build artifacts
 /target
+
+# Quarto artifacts
+/.quarto/
+/_book/
+/site_libs/
+**/*.quarto_ipynb

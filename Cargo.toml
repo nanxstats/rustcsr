@@ -2,5 +2,10 @@
 name = "rustcsr"
 version = "0.1.0"
 edition = "2024"
+description = "Rust for Clinical Study Reports and Submission"
+readme = "README.md"
+repository = "https://github.com/nanxstats/rustcsr"
+rust-version = "1.85"
+authors = ["Nan Xiao <me@nanx.me>"]
 
 [dependencies]
