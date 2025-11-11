@@ -1,0 +1,11 @@
+<svg width="800" height="500" viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style type="text/css">
+    @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&amp;display=swap');
+    </style>
+  </defs>
+  <text x="48.9%" y="40%" font-family="Fira Sans" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="middle"
+    dominant-baseline="middle">Rust for Clinical Study</text>
+  <text x="49.7%" y="44%" font-family="Fira Sans" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="middle"
+    dominant-baseline="middle">Reports and Submission</text>
+</svg>
